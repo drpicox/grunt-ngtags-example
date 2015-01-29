@@ -1,0 +1,18 @@
+{
+  "name": "grunt-ngtags-example",
+  "version": "0.0.0",
+  "authors": [
+    "David Rodenas <david.rodenas@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.11"
+  }
+}

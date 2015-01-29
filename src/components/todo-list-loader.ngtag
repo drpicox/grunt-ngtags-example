@@ -1,0 +1,12 @@
+<angular-element name="todo-list-loader">
+	<script>
+		var todos = [
+			{text: 'water plants', done: true},
+			{text: 'show this example', done: false},
+		];
+
+		this.get = function() {
+			return todos;
+		};
+	</script>
+</angular-element>

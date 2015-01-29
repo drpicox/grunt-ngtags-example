@@ -1,0 +1,17 @@
+<angular-element name="todo-item" bindings="todo">
+	<style>
+		todo-item > span.done {
+			color: #666;
+			text-decoration: line-through;
+		}
+	</style>
+	<template>
+		<input type="checkbox" ng-model="vm.todo.done">
+		<span ng-class="{done: vm.todo.done}">
+			{{vm.todo.text}}
+		</span>
+	</template>
+	<script>
+		this.a = 3;
+	</script>
+</angular-element>

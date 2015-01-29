@@ -1,0 +1,10 @@
+<angular-element name="todo-list" bindings="todos">
+	<template>
+		Todo List:
+		<ul>
+			<li ng-repeat="todo in vm.todos">
+				<todo-item todo="todo"></todo-item>
+			</li>
+		</ul>
+	</template>
+</angular-element>

@@ -1,0 +1,8 @@
+<angular-element name="hello-world">
+	<template>
+		<h1>Hello World</h1>
+		<hr>
+		<todo-list-loader id="loader"></todo-list-loader>
+		<todo-list todos="$.loader.get()"></todo-list>
+	</template>
+</angular-element>
