@@ -3,10 +3,10 @@ angular.module('myApp', [])
 .directive('id', function() {
 	return {
 		restrict: 'A',
+		scope: true,
 		link: function (scope,element,attrs) {
-			scope.$ = scope.$ || {};
-			scope.$[attrs.id] = scope.vm;
+			scope.$parent.$ = scope.$parent.$ || {};
+			scope.$parent.$[attrs.id] = scope.vm;
 		},
 	}
 });
-;
