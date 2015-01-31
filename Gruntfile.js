@@ -23,10 +23,18 @@ module.exports = function(grunt) {
 		ngtags: {
 			options: {
 				module: 'myApp',
+				excludeStyle: true,
 			},
 			build: {
 				src: 'src/components/*.ngtag',
 				dest: '.tmp/ngtags.js',
+			},
+			style: {
+				src: 'src/components/*.ngtag',
+				dest: '.tmp/ngtags.css',
+				options: {
+					generateStyle: true,
+				},
 			},
 		},
 
