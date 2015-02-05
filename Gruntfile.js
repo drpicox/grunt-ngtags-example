@@ -26,11 +26,11 @@ module.exports = function(grunt) {
 				excludeStyle: true,
 			},
 			build: {
-				src: 'src/components/*.ngtag',
+				src: 'src/{components,pages}/*.ngtag',
 				dest: '.tmp/ngtags.js',
 			},
 			style: {
-				src: 'src/components/*.ngtag',
+				src: 'src/{components,pages}/*.ngtag',
 				dest: '.tmp/ngtags.css',
 				options: {
 					generateStyle: true,
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
 
 		watch: {
 			ngtags: {
-				files: ['src/components/*.ngtag'],
+				files: ['src/{components,pages}/*.ngtag'],
 				tasks: ['ngtags']
 			},
 			livereload: {

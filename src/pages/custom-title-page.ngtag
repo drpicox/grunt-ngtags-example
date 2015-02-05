@@ -1,0 +1,11 @@
+<angular-page name="/custom-title">
+	<prop name="title">"Custom title"</prop>
+	<template>
+		Input title: <input type="text" ng-model="vm.page.title">
+		<hr>
+		Return <a href="#/">Home</a>.
+	</template>
+	<script inject="$route">
+		this.page = $route.current;
+	</script>
+</angular-page>

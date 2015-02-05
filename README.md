@@ -33,4 +33,5 @@ Relevant code is at the following files:
   - src/
     + index.html       # index including compiled ngtags as directives
     - components/      # ngtags examples
+    - pages/           # ngtags pages
 ```

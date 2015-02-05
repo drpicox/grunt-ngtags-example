@@ -1,0 +1,8 @@
+<angular-page name="/hello-world">
+	<prop name="title">"Home"</prop>
+	<template>
+		<hello-world></hello-world>
+		<hr>
+		Return <a href="#/">Home</a>.
+	</template>
+</angular-page>

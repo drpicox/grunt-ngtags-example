@@ -1,0 +1,22 @@
+<angular-element name="site" bindings="todo">
+	<style>
+		site {
+			margin: 16px;
+			border: solid black 1px;
+			display: block;
+		}
+		site > header {
+			padding: 16px;
+			background: yellow;
+			border-bottom: solid black 1px;
+			font-weight: bold;
+		}
+		site > main {
+			padding: 16px;
+		}
+	</style>
+	<template>
+		<header transclude-id="site-header"></header>
+		<main transclude-id="site-main"></main>
+	</template>
+</angular-element>

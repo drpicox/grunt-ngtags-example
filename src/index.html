@@ -3,11 +3,19 @@
 	<title>Grunt-Ntags-Test</title>
 	<link rel="stylesheet" type="text/css" href="ngtags.css">
 	<script src="bower_components/angular/angular.js"></script>
+	<script src="bower_components/angular-route/angular-route.js"></script>
 	<script src="node_modules/grunt-ngtags/node_modules/ngtags/runtime/ngtags-runtime.js"></script>
 	<script src="app.js"></script>
 	<script src="ngtags.js"></script>
 </head>
 <body>
-	<hello-world></hello-world>
+	<site>
+		<div transclude-to="site-header">
+			<page-title></page-title>
+		</div>
+		<div transclude-to="site-main">
+			<ng-view></ng-view>
+		</div>
+	</site>
 </body>
 </html>

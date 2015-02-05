@@ -1,0 +1,12 @@
+<angular-element name="page-title">
+	<template>
+		{{vm.title}}
+	</template>
+	<script inject="$route,$scope">
+		$scope.$watch(function() {
+			return $route.current && $route.current.title;
+		}, function (newTitle) {
+			this.title = newTitle;
+		}.bind(this));
+	</script>
+</angular-element>

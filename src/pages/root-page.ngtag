@@ -1,0 +1,7 @@
+<angular-page name="/">
+	<prop name="title">"Home"</prop>
+	<template>
+		See <a href="#/hello-world">Hello World</a> example.<br>
+		See <a href="#/custom-title">Custom Title</a> example.<br>
+	</template>
+</angular-page>

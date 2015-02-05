@@ -1,1 +1,4 @@
-angular.module('myApp', ['ngtagsRuntime']);
+angular.module('myApp', [
+	'ngRoute',
+	'ngtagsRuntime',
+]);
